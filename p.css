@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300;400;900&display=swap');
+:root{
+    --primary-color:rgb(7, 39, 99);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    /* color: #fff; */
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+     color: #333;
+}
+h1,h2{
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+/* NAVBAR */
+.navbar{
+    background-color:  var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+/* SHOWCASE */
+.showcase{
+    height: 400px;
+    background-color:var(--primary-color) ;
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 20px 0;
+}
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 55% 35%;
+    gap: 30px ;
+}
+.showcase-form{
+    position: relative;  
+     top: 60px;     /*  login's slightly lower than usual */
+     height: 350px;
+     width: 400px;
+     padding: 40px;
+     z-index: 100;
+     justify-self: flex-end;
+}
+.showcase-form .form-control{
+    margin: 30px 0;     /*       spacing bw email&pw */
+}
+.showcase-form input[type='email'],
+.showcase-form input[type='password']
+{
+border: 0;
+border-bottom: 1px solid #b4becb;
+width: 100%;
+padding: 3px;
+font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;       /* rid of ugly border of email&pw */
+}
+.showcase::before,.showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;                /* curve shit  */
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background:#fff;
+    transform: skewY(-3deg);
+}
+
+/* UTILITIES,CALSSES USED IN ALL SITE */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.card{
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px ;
+    cursor: pointer;
+    background: var(--primary-color);
+   color: white;
+   border:none;
+   border-radius: 5px;
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px white solid;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /*  diff bw a.p & login  */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+      height: 100%;   /*hOOhOhOh */
+}
+/* CLI */
+/* .cli .grid{ */
+  /* grid-template-columns: repeat(3, 1fr);bcz of potraits shit  */
+ /* grid-template-rows: repeat(2, 1fr); */
+/* } */
+
+/* .cli .grid>*:first-child{          whatvr the first pic is  */
+/* grid-column: 1/span 2;             pic==card  */
+/* grid-row: 1/span 2; */
+/* } */
+/* .grid:hover{
+    transform: scale(0.98);
+} */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    /* background: #f2f2f2; */
+    overflow: auto;
+}
+.gallery{
+    margin: 5px ;
+    border: 1px solid #ccc;
+    float: left;
+    width: 390px;
+    padding-top: 100px;
+    border: #333;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.potraits{
+    /* font-weight: 600; */
+    /* line-height: 1.2; */
+    margin: 10px 90px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+
+}
+/* .gallery{
+   
+} */
+
+.meenu{
+    color:rgb(154 171 217);
+}
+
+
+
+
+
+
+
+
+
